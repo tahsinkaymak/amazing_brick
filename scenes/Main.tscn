@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/rect.tscn" type="PackedScene" id=1]
+[ext_resource path="res://sprites/background.png" type="Texture" id=2]
+[ext_resource path="res://scenes/block.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 539.78, 960.628 )
+scale = Vector2( 3.99097, 4.00255 )
+texture = ExtResource( 2 )
+
+[node name="rect" parent="." instance=ExtResource( 1 )]
+position = Vector2( 409.386, 294.504 )
+collision_layer = 0
+
+[node name="block" parent="." instance=ExtResource( 3 )]
+collision_mask = 0
